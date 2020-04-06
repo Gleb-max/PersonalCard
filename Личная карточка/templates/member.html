@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="center-header">
+    <h2>{{ member["name"] }} {{ member["surname"] }}</h2>
+</div>
+<div class="center-header">
+    <img class="photo" src="{{url_for('static', filename='img/' + member['photo'])}}">
+</div>
+
+<div class="center-header">
+    <h4>{{ member["professions"] }}</h4>
+</div>
+
+{% endblock %}
